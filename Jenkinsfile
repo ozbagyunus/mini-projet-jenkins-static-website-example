@@ -114,7 +114,7 @@ pipeline {
       }
     }
 
-    stage('STAGING') {
+  stage('STAGING') {
   agent any
   steps {
     sh """
@@ -129,7 +129,7 @@ pipeline {
 
 
 
-    stage('PRODUCTION') {
+  stage('PRODUCTION') {
   when {
     anyOf { branch 'main'; branch 'master' }
   }
