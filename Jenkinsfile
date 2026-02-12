@@ -114,7 +114,7 @@ pipeline {
       }
     }
 
-    sstage('STAGING') {
+    stage('STAGING') {
   agent any
   steps {
     script {
