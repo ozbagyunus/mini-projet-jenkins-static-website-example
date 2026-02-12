@@ -131,7 +131,7 @@ pipeline {
 
   stage('PRODUCTION') {
   when {
-    anyOf { branch 'main'; branch 'master' }
+           expression { GIT_BRANCH == 'origin/master' }
   }
   agent any
   steps {
