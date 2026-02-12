@@ -10,7 +10,7 @@ pipeline {
     DOCKERHUB_CRED    = credentials('dockerhub_ozbagyunus')
 
     INTERNAL_PORT     = "80"
-    APP_EXPOSED_PORT  = "8080"                    // pour les tests locaux du conteneur dans Jenkins
+    APP_EXPOSED_PORT  = "8090"                    // pour les tests locaux du conteneur dans Jenkins
     EXTERNAL_PORT     = "${PARAM_PORT_EXPOSED}"   // pour staging/prod sur la plateforme
 
     CONTAINER_IMAGE   = "${DOCKERHUB_ID}/${IMAGE_NAME}:${IMAGE_TAG}"
