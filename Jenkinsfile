@@ -15,8 +15,8 @@ pipeline {
 
     CONTAINER_IMAGE   = "${DOCKERHUB_ID}/${IMAGE_NAME}:${IMAGE_TAG}"
 
-    STG_API_ENDPOINT  = "ip10-0-10-5-d64sllu57ed000f1a14g-1993.direct.docker.labs.eazytraining.fr"
-    PROD_API_ENDPOINT = "ip10-0-10-6-d64sllu57ed000f1a14g-1993.direct.docker.labs.eazytraining.fr"
+    STG_API_ENDPOINT  = "ip10-0-55-5-d673q3e57ed000f1a2pg-1993.direct.docker.labs.eazytraining.fr"
+    PROD_API_ENDPOINT = "ip10-0-55-6-d673q3e57ed000f1a2pg-1993.direct.docker.labs.eazytraining.fr"
   }
 
   parameters {
